@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.joskoding.beshoot.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/rvimages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivshow"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:src="@drawable/noimages"
+                />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_above="@+id/layout_footer"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_camera" />
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@color/colorFooter"
+        >
+        <HorizontalScrollView
+            android:scrollbarStyle="insideOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/btnbrightness"
+                    android:onClick="brightness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btnbrightness" />
+
+                <ImageButton
+                    android:id="@+id/btngray"
+                    android:onClick="gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btngray"/>
+
+                <ImageButton
+                    android:id="@+id/btnnegative"
+                    android:onClick="negative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btnnegative" />
+
+                <ImageButton
+                    android:id="@+id/btnbinner"
+                    android:onClick="binner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btnbinner" />
+
+                <ImageButton
+                    android:id="@+id/btncontrast"
+                    android:layout_width="match_parent"
+                    android:onClick="contrast"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btncontrast" />
+                <ImageButton
+                    android:id="@+id/btnrotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="rotate"
+                    android:src="@drawable/btnrotate" />
+                <ImageButton
+                    android:id="@+id/btnflip"
+                    android:src="@drawable/btnflip"
+                    android:onClick="flip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btnflipvertical"
+                    android:onClick="flipvertical"
+                    android:src="@drawable/btnflipvertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btnsharpen"
+                    android:src="@drawable/btnsharpen"
+                    android:onClick="sharpen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btnblur"
+                    android:src="@drawable/btnblur"
+                    android:onClick="blur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btnedge"
+                    android:src="@drawable/btnedgefilter"
+                    android:onClick="edge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btnidentity"
+                    android:src="@drawable/btnidentity"
+                    android:onClick="identity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:onClick="edgeenhance"
+                    android:id="@+id/btnedgeenhancefilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btnedgeenhance" />
+                <ImageButton
+                    android:id="@+id/btnemboss"
+                    android:src="@drawable/btnemboss"
+                    android:onClick="emboss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btngaussian"
+                    android:onClick="gaussian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btngaussian" />
+                <ImageButton
+                    android:id="@+id/btncancel"
+                    android:onClick="cancelEffect"
+                    android:src="@drawable/btncancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:id="@+id/btndefault"
+                    android:onClick="defaultEffect"
+                    android:src="@drawable/btndefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>
